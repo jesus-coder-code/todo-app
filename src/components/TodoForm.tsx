@@ -8,6 +8,7 @@ interface TodoFormProps {
   onSuccess: () => void;
 }
 
+//formulario
 const TodoForm: React.FC<TodoFormProps> = ({ todo, onSuccess }) => {
   const [name, setName] = useState(todo?.tittle || '');
   const [description, setDescription] = useState(todo?.description || '');
